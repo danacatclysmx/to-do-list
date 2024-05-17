@@ -19,18 +19,44 @@
   <body>
     <main class="container my-5 p-5">
       <h2>To do:</h2>
-      <div class="list-group"></div>
-      <div class="mt-3 pt-3 text-end" id="task">
+      <ol class="list-group list-group-numbered"></ol>
+      <div class="mt-3 pt-3 text-start" id="task">
         <div class="row">
-          <label for="newTask" class="form-label col-sm-2 col-form-label"
+          <label for="newTask" class="form-label col-sm-4 col-form-label"
             ><strong>Task</strong></label
           >
-          <div class="col-sm-10">
+          <div class="col-sm-8">
             <input
               id="newTask"
               type="text"
               class="form-control"
               placeholder="What to do need to do?"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <label for="newTask" class="form-label col-sm-4 col-form-label"
+            ><strong>Img</strong></label
+          >
+          <div class="col-sm-8">
+            <input
+              class="form-control"
+              type="url"
+              id="imgTask"
+              placeholder="Ingrese url de la imagen que desea mostrar "
+            />
+          </div>
+        </div>
+        <div class="row">
+          <label for="taskDate" class="form-label col-sm-4 col-form-label">
+            <strong>Fecha y Hora Final </strong>
+          </label>
+          <div class="col-sm-8">
+            <input
+              id="taskDate"
+              type="datetime-local"
+              class="form-control"
+              placeholder="Fecha y hora de la tarea"
             />
           </div>
         </div>
