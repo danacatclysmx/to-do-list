@@ -2,11 +2,10 @@ const saveItemButton = document.querySelector("#btnSave");
 const inputTask = document.querySelector("#newTask");
 const listGroup = document.querySelector(".list-group");
 let taskCounter = 1;
-saveItemButton.addEventListener("click", addNewItem);
 inputTask.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") {
-    addNewItem();
-  }
+  if (e.key === "Enter") {
+    addNewItem();
+  }
 });
 
 function addNewItem() {
